@@ -1,0 +1,105 @@
+.tovar {
+    height: 92px;
+    background: #000;
+    display: flex;
+    align-items: center;
+
+}
+
+.tovar__content {
+    display: flex;
+    align-items: center;
+
+    .tovar__katalog {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        border-radius: 5px;
+        border: 1px solid var(--Orange, #F05A00);
+        padding: 15px 14px 17px 16px;
+
+      
+
+        & span {
+            color: var(--White, #FFF);
+
+            /* Техт */
+            font-family: Raleway;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            /* 125% */
+        }
+
+    }
+
+
+
+}
+
+.tovar__menu {
+    display: flex;
+    align-items: center;
+    margin-left: 52px;
+    gap: 60px;
+
+    @media screen and (max-width:480px) {
+        overflow-x: auto;
+        
+    }
+
+
+
+    & li {
+        color: var(--White, #FFF);
+
+        /* Техт */
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        /* 125% */
+    }
+}
+
+.tovar__icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 51px;
+}
+
+.tovar__input {
+    margin-left: 75px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 57px;
+    outline: none;
+    padding-right: 85px;
+}
+
+.tovar__input::placeholder {
+    color: var(--Smoky, #8A8A8A);
+
+    /* Техт */
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 125% */
+}
+
+.inputss {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input__img {
+    position: absolute;
+    left: 90px;
+}

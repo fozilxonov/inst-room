@@ -1,0 +1,226 @@
+.cards {
+    background: var(--Background, #F2F5F7);
+    padding-top: 84px;
+}
+
+.card__flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:480px) {
+        flex-direction: column;
+
+        .card__row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title__col-1 img {
+            display: none;
+            // background: #F2F5F7;
+        }
+    }
+
+
+
+}
+
+.title__row {
+    display: flex;
+    align-items: center;
+
+    .title__col {
+        color: var(--Black, #000);
+
+        /* H2 */
+        font-family: Prosto One;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        /* 106.667% */
+    }
+
+    .title__col-1 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 60px;
+
+        .img__pad {
+            padding: 8px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.card__row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 74px;
+
+    .card__col {
+        margin-top: 24px;
+        width: 310px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
+        padding-right: 12px;
+
+        .top__row {
+
+
+            .top__col {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 12px;
+
+                .col__btn {
+                    padding: 4px 6px;
+                    color: #FFF;
+
+                    /* Text mini */
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px;
+                    /* 114.286% */
+                    background: linear-gradient(0deg, #180A3E 0%, #180A3E 100%), #FFF;
+                    border: 0;
+                }
+
+                .col__images {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+        }
+
+        .card__img {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
+}
+
+.card__img :hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.card__lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 12px;
+
+    .card__line {
+        width: 68px;
+        height: 2px;
+        background: var(--Gray, #DEDBDB);
+    }
+
+    .active-line {
+        background: #FFB78B;
+    }
+}
+
+.col__text {
+    padding-left: 12px;
+    margin-top: 14px;
+    color: var(--Black, #000);
+
+    /* Техт */
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 125% */
+}
+
+
+.bottom__row {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+
+    .bottom__col {
+
+        display: flex;
+        align-items: flex-end;
+
+
+        & span {
+            margin-left: 12px;
+            color: var(--Black, #000);
+            text-align: center;
+            font-family: Raleway;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            /* 120% */
+        }
+
+        .bot__active {
+            color: var(--Gray, #DEDBDB);
+            text-align: center;
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            /* 125% */
+            text-decoration-line: strikethrough;
+        }
+
+    }
+
+    .bottom__text {
+        display: flex;
+        align-items: center;
+        color: #126935;
+
+        /* Text mini */
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        /* 114.286% */
+    }
+}
+
+.bottom__col-1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+
+    .bottom__img {
+
+        padding: 12px 15px;
+        border-radius: 5px 0px;
+        border: 2px solid var(--Orange, #F05A00);
+    }
+
+
+}
+
+.bottom__img-5 {
+    background-color: #F05A00;
+    margin-left: 94px;
+}

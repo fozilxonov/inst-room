@@ -1,0 +1,104 @@
+.forma {
+    margin-top: 82px;
+}
+
+.forma__content {
+    display: flex;
+    gap: 52px;
+
+    @media screen and (max-width:480px) {
+        flex-direction: column;
+    }
+}
+
+.forma__row {
+
+    .forma__sub {
+        color: var(--Black, #000);
+
+        /* H2 */
+        font-family: Prosto One;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        /* 106.667% */
+    }
+
+    .forma__text {
+        margin-top: 24px;
+        width: 388px;
+        color: var(--Black, #000);
+
+        /* Text paragraph */
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 150% */
+
+        @media screen and (max-width:480px) {
+            // text-align: justify;
+           
+        }
+    }
+
+
+    .forma__btn {
+        color: var(--White, #FFF);
+        margin-top: 40px;
+        border: 0;
+        /* Техт */
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        /* 125% */
+        padding: 14px 32px;
+        border-radius: 5px;
+        background: var(--Orange, #F05A00);
+    }
+}
+
+.forma__roww {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media screen and (max-width:480px) {
+        flex-direction: column;
+    }
+
+
+    .forma__col {
+        width: 420px;
+        margin-bottom: 5px;
+
+        .forma__title {
+            margin-top: 16px;
+            color: var(--Black, #000);
+            font-family: Raleway;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            /* 120% */
+        }
+
+        .forma__text-1 {
+            margin-top: 4px;
+            color: var(--Black, #000);
+
+            /* Text description */
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            /* 125% */
+        }
+    }
+}
